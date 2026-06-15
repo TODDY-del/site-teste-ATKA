@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ATKA Clínica Odontológica - Serviços</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;700&amp;family=Inter:wght@300;400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#e6e2da",
+                        "surface-container-highest": "#36352f",
+                        "surface-container-lowest": "#0f0e0a",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed-dim": "#f7ba8c",
+                        "surface": "#14130f",
+                        "on-tertiary-fixed": "#2f1400",
+                        "outline-variant": "#42484a",
+                        "surface-container": "#20201b",
+                        "tertiary-container": "#3f1d00",
+                        "primary-fixed": "#cbe7ef",
+                        "secondary-fixed": "#bfeaf4",
+                        "error-container": "#93000a",
+                        "surface-bright": "#3a3934",
+                        "on-tertiary-fixed-variant": "#673d19",
+                        "secondary-container": "#254f57",
+                        "on-secondary-fixed": "#001f25",
+                        "background": "#14130f",
+                        "on-error": "#690005",
+                        "on-primary-fixed": "#021f25",
+                        "primary": "#afcbd3",
+                        "secondary": "#a3ced7",
+                        "on-primary-container": "#779299",
+                        "on-tertiary-container": "#b78158",
+                        "on-background": "#e6e2da",
+                        "primary-container": "#0e2a30",
+                        "tertiary": "#f7ba8c",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#afcbd3",
+                        "surface-container-high": "#2b2a25",
+                        "tertiary-fixed": "#ffdcc4",
+                        "surface-variant": "#36352f",
+                        "on-secondary-fixed-variant": "#234c55",
+                        "on-secondary": "#05363e",
+                        "outline": "#8c9294",
+                        "inverse-on-surface": "#31302b",
+                        "surface-dim": "#14130f",
+                        "on-tertiary": "#4c2705",
+                        "on-primary": "#19343a",
+                        "inverse-primary": "#486369",
+                        "on-secondary-container": "#96bfc9",
+                        "inverse-surface": "#e6e2da",
+                        "surface-container-low": "#1c1c17",
+                        "on-primary-fixed-variant": "#304b51",
+                        "secondary-fixed-dim": "#a3ced7",
+                        "on-surface-variant": "#c1c7c9",
+                        "primary-fixed-dim": "#afcbd3",
+                        "copper": "#C0895F"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "80px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "title-md": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "300" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0px", "fontWeight": "300" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "0.1em", "fontWeight": "200" }],
+                        "title-md": ["20px", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "300" }],
+                        "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0e2a30; /* Primary Container as base for deep petrol void */
+            color: #e6e2da; /* On-surface */
+        }
+        
+        .copper-accent {
+            border-bottom: 1px solid #C0895F;
+        }
+        
+        .card-border {
+            border: 1px solid rgba(169, 195, 200, 0.2); /* #A9C3C8 at 20% */
+        }
+        
+        .card-bg-hover {
+            transition: background-color 0.3s ease;
+        }
+        
+        .card-bg-hover:hover {
+            background-color: rgba(110, 151, 160, 0.1); /* #6E97A0 at 10% */
+        }
+
+        .btn-primary {
+            border: 1px solid #C0895F;
+            color: #C0895F;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(192, 137, 95, 0.1);
+        }
+
+        /* Material Symbols Fill Configuration */
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col font-body-md">
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-outline-variant/20 backdrop-blur-md" style="background:rgba(11,32,38,0.92);">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center py-stack-md">
+    <a class="flex items-center gap-3" href="index.html">
+      <img alt="ATKA" class="h-8 w-auto" src="logo_ATKA.svg"/>
+      
+    </a>
+    <nav class="hidden md:flex gap-gutter items-center">
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="index.html">Início</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="sobre.html">Sobre</a>
+          <a class="text-primary border-b border-primary pb-[2px] font-label-sm text-label-sm uppercase tracking-widest" href="servicos.html">Serviços</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Contato</a>
+    </nav>
+    <a class="btn-primary hidden md:inline-block px-6 py-2 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Agendar</a>
+    <button class="md:hidden text-on-surface p-1" id="mob-toggle" aria-label="Menu">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+  <div id="mob-menu" class="hidden" style="background:rgba(11,32,38,0.98);border-top:1px solid rgba(66,72,74,0.2);">
+    <div class="px-margin-mobile py-6 flex flex-col gap-5">
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="index.html">Início</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="sobre.html">Sobre</a>
+          <a class="text-primary border-b border-primary pb-[2px] font-label-sm text-label-sm uppercase tracking-widest" href="servicos.html">Serviços</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Contato</a>
+      <a class="btn-primary self-start mt-2 px-6 py-2 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Agendar</a>
+    </div>
+  </div>
+</header>
+<script>document.getElementById('mob-toggle').addEventListener('click',function(){document.getElementById('mob-menu').classList.toggle('hidden');});</script>
+<!-- Main Content -->
+<main class="flex-grow pt-[120px] pb-section-gap-mobile md:pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Header Section -->
+<header class="mb-section-gap-mobile md:mb-section-gap text-center md:text-left flex flex-col md:flex-row justify-between items-end gap-stack-lg">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-stack-md copper-accent pb-stack-sm inline-block">Procedimentos e Serviços</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-stack-md">
+                    Descubra nossa gama completa de tratamentos de alta precisão. Combinamos tecnologia de ponta com um ambiente projetado para sua <strong>serenidade e conforto absoluto</strong>.
+                </p>
+</div>
+</header>
+<!-- Services Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service 1: Facetas -->
+<article class="card-border p-8 card-bg-hover flex flex-col justify-between h-full rounded-xl group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="mb-stack-lg flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="auto_awesome">auto_awesome</span>
+<span class="px-3 py-1 card-border rounded-full font-label-sm text-label-sm text-on-surface-variant">Estética</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Facetas em Resina e Porcelana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        Transforme seu sorriso com <strong>lâminas ultrafinas</strong> desenhadas digitalmente para harmonizar com seus traços faciais, garantindo um resultado natural e duradouro.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest mt-auto group/link" href="#">
+                    Saiba mais <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Service 2: Harmonização -->
+<article class="card-border p-8 card-bg-hover flex flex-col justify-between h-full rounded-xl group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="mb-stack-lg flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="face_retouching_natural">face_retouching_natural</span>
+<span class="px-3 py-1 card-border rounded-full font-label-sm text-label-sm text-on-surface-variant">Estética</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Harmonização Orofacial</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        Procedimentos minimamente invasivos para <strong>equilibrar e rejuvenescer</strong> as proporções do rosto, realçando sua beleza natural com sutileza e precisão milimétrica.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest mt-auto group/link" href="#">
+                    Saiba mais <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Service 3: Alinhadores -->
+<article class="card-border p-8 card-bg-hover flex flex-col justify-between h-full rounded-xl group relative overflow-hidden lg:col-span-1 md:col-span-2 lg:col-auto">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="mb-stack-lg flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="all_inclusive">all_inclusive</span>
+<span class="px-3 py-1 card-border rounded-full font-label-sm text-label-sm text-on-surface-variant">Ortodontia</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Alinhadores Invisíveis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        A alternativa moderna e discreta aos aparelhos tradicionais. <strong>Placas transparentes</strong> sob medida que alinham seus dentes com conforto e previsibilidade digital.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest mt-auto group/link" href="#">
+                    Saiba mais <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Service 4: Implantes -->
+<article class="card-border p-8 card-bg-hover flex flex-col justify-between h-full rounded-xl group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="mb-stack-lg flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="implant">planet</span>
+<span class="px-3 py-1 card-border rounded-full font-label-sm text-label-sm text-on-surface-variant">Cirurgia</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Implantes Dentários</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        Recupere a funcionalidade e a estética com <strong>raízes artificiais de titânio</strong>. Cirurgias guiadas para máxima precisão, segurança e recuperação otimizada.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest mt-auto group/link" href="#">
+                    Saiba mais <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Service 5: Gengivais -->
+<article class="card-border p-8 card-bg-hover flex flex-col justify-between h-full rounded-xl group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="mb-stack-lg flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="healing">healing</span>
+<span class="px-3 py-1 card-border rounded-full font-label-sm text-label-sm text-on-surface-variant">Periodontia</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Tratamentos Gengivais</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        Cuidado especializado para a saúde da fundação do seu sorriso. <strong>Prevenção e tratamento</strong> de doenças periodontais para garantir longevidade aos seus dentes.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest mt-auto group/link" href="#">
+                    Saiba mais <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Service 6: Canal -->
+<article class="card-border p-8 card-bg-hover flex flex-col justify-between h-full rounded-xl group relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="mb-stack-lg flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="medical_services">medical_services</span>
+<span class="px-3 py-1 card-border rounded-full font-label-sm text-label-sm text-on-surface-variant">Endodontia</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Tratamento de Canal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        Intervenção <strong>indolor e mecanizada</strong> para salvar dentes com comprometimento severo. Uso de magnificação para precisão microscópica.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest mt-auto group/link" href="#">
+                    Saiba mais <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Service 7: Cirurgia -->
+<article class="card-border p-8 card-bg-hover flex flex-col justify-between h-full rounded-xl group relative overflow-hidden md:col-span-2 lg:col-span-1">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="mb-stack-lg flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="surgical">surgical</span>
+<span class="px-3 py-1 card-border rounded-full font-label-sm text-label-sm text-on-surface-variant">Cirurgia</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Cirurgia Odontológica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                        Extrações complexas, como sisos, e enxertos ósseos realizados em <strong>ambiente clínico estéril</strong>, focado em minimizar o trauma e acelerar a recuperação.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest mt-auto group/link" href="#">
+                    Saiba mais <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+<!-- Service 8: Clinica Geral -->
+<article class="card-border p-8 card-bg-hover flex flex-col justify-between h-full rounded-xl group relative overflow-hidden md:col-span-2 lg:col-span-2">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+<div>
+<div class="mb-stack-lg flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="health_and_safety">health_and_safety</span>
+<span class="px-3 py-1 card-border rounded-full font-label-sm text-label-sm text-on-surface-variant">Prevenção</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Clínica Geral</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg max-w-2xl">
+                        A base para um sorriso impecável. Check-ups digitais, limpezas profundas (profilaxia) e restaurações. Nosso foco primário é a <strong>manutenção da saúde oral</strong> em seu estado mais puro e funcional.
+                    </p>
+</div>
+<a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest mt-auto group/link" href="#">
+                    Saiba mais <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest pt-section-gap pb-stack-lg px-margin-mobile md:px-margin-desktop border-t border-outline-variant/10 flat no shadows relative overflow-hidden">
+<!-- Faint watermark background -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[20vw] font-display-lg text-on-surface opacity-[0.02] pointer-events-none select-none tracking-widest">
+            ATKA
+        </div>
+<div class="max-w-container-max mx-auto relative z-10 flex flex-col gap-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-stack-lg border-b border-outline-variant/10 pb-stack-lg">
+<a class="font-display-lg text-display-lg text-on-surface uppercase flex items-center gap-4" href="#">
+<img alt="ATKA" class="h-8 w-auto" src="logo_ATKA.svg"/>
+                    ATKA
+                </a>
+<nav class="flex flex-wrap gap-x-gutter gap-y-stack-sm">
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="index.html">Início</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="sobre.html">Sobre</a>
+<a class="text-tertiary hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="servicos.html">Serviços</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="contato.html">Contato</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="#">Termos de Uso</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="#">Privacidade</a>
+</nav>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-md text-body-md text-sm">
+<p>© 2024 ATKA Clínica Odontológica. Todos os direitos reservados.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

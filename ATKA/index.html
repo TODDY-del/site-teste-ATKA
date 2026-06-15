@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="ATKA Clínica Odontológica — Odontologia de alta performance em São Paulo. Facetas, alinhadores, harmonização orofacial em ambiente de serenidade e precisão."/>
+<title>ATKA Clínica Odontológica — Seu sorriso de volta</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400;500;700&amp;family=Inter:wght@300;400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#e6e2da",
+                        "surface-container-highest": "#36352f",
+                        "surface-container-lowest": "#0f0e0a",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed-dim": "#f7ba8c",
+                        "surface": "#14130f",
+                        "on-tertiary-fixed": "#2f1400",
+                        "outline-variant": "#42484a",
+                        "surface-container": "#20201b",
+                        "tertiary-container": "#3f1d00",
+                        "primary-fixed": "#cbe7ef",
+                        "secondary-fixed": "#bfeaf4",
+                        "error-container": "#93000a",
+                        "surface-bright": "#3a3934",
+                        "on-tertiary-fixed-variant": "#673d19",
+                        "secondary-container": "#254f57",
+                        "on-secondary-fixed": "#001f25",
+                        "background": "#14130f",
+                        "on-error": "#690005",
+                        "on-primary-fixed": "#021f25",
+                        "primary": "#afcbd3",
+                        "secondary": "#a3ced7",
+                        "on-primary-container": "#779299",
+                        "on-tertiary-container": "#b78158",
+                        "on-background": "#e6e2da",
+                        "primary-container": "#0e2a30",
+                        "tertiary": "#f7ba8c",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#afcbd3",
+                        "surface-container-high": "#2b2a25",
+                        "tertiary-fixed": "#ffdcc4",
+                        "surface-variant": "#36352f",
+                        "on-secondary-fixed-variant": "#234c55",
+                        "on-secondary": "#05363e",
+                        "outline": "#8c9294",
+                        "inverse-on-surface": "#31302b",
+                        "surface-dim": "#14130f",
+                        "on-tertiary": "#4c2705",
+                        "on-primary": "#19343a",
+                        "inverse-primary": "#486369",
+                        "on-secondary-container": "#96bfc9",
+                        "inverse-surface": "#e6e2da",
+                        "surface-container-low": "#1c1c17",
+                        "on-primary-fixed-variant": "#304b51",
+                        "secondary-fixed-dim": "#a3ced7",
+                        "on-surface-variant": "#c1c7c9",
+                        "primary-fixed-dim": "#afcbd3",
+                        "copper": "#C0895F"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "80px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "section-gap-mobile": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "title-md": ["Hanken Grotesk"],
+                        "body-md": ["Inter"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "label-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "300" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0px", "fontWeight": "300" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "0.1em", "fontWeight": "200" }],
+                        "title-md": ["20px", { "lineHeight": "1.4", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "300" }],
+                        "label-sm": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.15em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: #0e2a30; /* Primary Container as base for deep petrol void */
+            color: #e6e2da; /* On-surface */
+        }
+        
+        .copper-accent {
+            border-bottom: 1px solid #C0895F;
+        }
+        
+        .card-border {
+            border: 1px solid rgba(169, 195, 200, 0.2); /* #A9C3C8 at 20% */
+        }
+        
+        .card-bg-hover {
+            transition: background-color 0.3s ease;
+        }
+        
+        .card-bg-hover:hover {
+            background-color: rgba(110, 151, 160, 0.1); /* #6E97A0 at 10% */
+        }
+
+        .btn-primary {
+            border: 1px solid #C0895F;
+            color: #C0895F;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: rgba(192, 137, 95, 0.1);
+        }
+
+        /* Material Symbols Fill Configuration */
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+
+        /* Hero mobile: troca background e mantém img1 no card */
+        .hero-bg-mobile-source {
+            display: none; /* esconde img desktop no mobile */
+        }
+
+        @media (max-width: 767px) {
+            .hero-section {
+                background-image: url('../img1_hero_mobile.png');
+                background-size: cover;
+                background-position: center top;
+            }
+            .hero-bg-desktop {
+                display: none; /* esconde a <img> de background desktop */
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest min-h-screen flex flex-col">
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-outline-variant/20 backdrop-blur-md" style="background:rgba(11,32,38,0.92);">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center py-stack-md">
+    <!-- Logo -->
+    <a class="flex items-center gap-3 text-decoration-none" href="index.html">
+      <img alt="ATKA" class="h-8 w-auto" src="logo_ATKA.svg"/>
+      
+    </a>
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex gap-gutter items-center">
+        <a class="text-primary border-b border-primary pb-[2px] font-label-sm text-label-sm uppercase tracking-widest transition-all" href="index.html">Início</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="sobre.html">Sobre</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="servicos.html">Serviços</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Contato</a>
+    </nav>
+    <!-- Desktop Agendar -->
+    <a class="btn-primary hidden md:inline-block px-6 py-2 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Agendar</a>
+    <!-- Mobile Hamburger -->
+    <button class="md:hidden text-on-surface p-1" id="mob-toggle" aria-label="Menu">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mob-menu" class="hidden" style="background:rgba(11,32,38,0.98);border-top:1px solid rgba(66,72,74,0.25);">
+    <div class="px-margin-mobile py-6 flex flex-col gap-5">
+          <a class="text-primary border-b border-primary pb-[2px] font-label-sm text-label-sm uppercase tracking-widest transition-all" href="index.html">Início</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="sobre.html">Sobre</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="servicos.html">Serviços</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Contato</a>
+      <a class="btn-primary self-start mt-2 px-6 py-2 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Agendar</a>
+    </div>
+  </div>
+</header>
+<script>
+  document.getElementById('mob-toggle').addEventListener('click', function() {
+    document.getElementById('mob-menu').classList.toggle('hidden');
+  });
+</script>
+<main class="flex-grow">
+<!-- Hero -->
+<section class="hero-section min-h-screen flex items-center justify-center relative overflow-hidden">
+  <!-- Background img2 (desktop only) -->
+  <img src="../img2_hero.png" alt="" class="hero-bg-desktop absolute inset-0 w-full h-full object-cover" aria-hidden="true"/>
+  <div class="absolute inset-0" style="background: rgba(7,19,26,0.55);"></div>
+  <!-- Bottom fade -->
+  <div class="absolute bottom-0 left-0 right-0 h-40 pointer-events-none z-10" style="background: linear-gradient(to bottom, transparent, #0e2a30);"></div>
+
+  <!-- Card com img1 + texto -->
+  <div class="relative z-20 w-full max-w-[1040px] mx-auto px-margin-mobile md:px-8 pt-[100px] pb-16">
+    <div class="relative rounded-2xl overflow-hidden" style="min-height: 560px;">
+      <!-- img1 como fundo do card -->
+      <img src="../img1_hero.png" alt="Clínica ATKA" class="absolute inset-0 w-full h-full object-cover"/>
+      <!-- overlay escuro sobre img1 -->
+      <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(7,19,26,0.90) 30%, rgba(7,19,26,0.45) 100%);"></div>
+      <!-- Texto sobre o card -->
+      <div class="relative z-10 flex flex-col items-center justify-end h-full text-center px-8 pb-12 pt-32">
+        <p class="font-label-sm text-label-sm text-primary mb-8 tracking-[0.25em]">ATKA Clínica Odontológica</p>
+        <h1 class="font-display-lg text-on-surface leading-none tracking-[0.12em] uppercase" style="font-size: clamp(48px, 8vw, 100px); font-weight: 200; letter-spacing: 0.12em;">Seu sorriso</h1>
+        <h1 class="font-display-lg text-on-surface leading-none tracking-[0.12em] uppercase italic mb-8" style="font-size: clamp(48px, 8vw, 100px); font-weight: 200;">De volta.</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-md mx-auto leading-relaxed">
+          Oferecemos tratamentos que unem ciência e estética, revelando o melhor do seu sorriso com serenidade e hospitalidade.
+        </p>
+        <a class="btn-primary px-8 py-3 font-label-sm text-label-sm uppercase tracking-widest" href="contato.html">Agendar sua avaliação</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- A Filosofia ATKA -->
+<section class="pt-section-gap-mobile md:pt-section-gap pb-section-gap-mobile md:pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+  <p class="font-label-sm text-label-sm text-primary mb-stack-lg tracking-[0.2em]">A Filosofia ATKA</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+    <div>
+      <h2 class="font-display-lg text-on-surface copper-accent pb-stack-md inline-block" style="font-size: clamp(28px, 3.5vw, 42px); font-weight: 300; line-height: 1.2; letter-spacing: 0.04em;">
+        Redefinindo a experiência odontológica através de um ambiente projetado para a sua tranquilidade.
+      </h2>
+    </div>
+    <div class="md:pt-4">
+      <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-stack-lg">
+        Na ATKA, acreditamos que a precisão clínica e o conforto absoluto devem coexistir. Nossa abordagem minimalista e foco em tecnologia de ponta garantem resultados excepcionais.
+      </p>
+      <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        Cada detalhe do espaço foi projetado para transformar sua consulta em uma experiência de cuidado genuíno.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Especialidades -->
+<section class="pb-section-gap-mobile md:pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+  <div class="flex justify-between items-end mb-section-gap-mobile md:mb-stack-lg gap-stack-md flex-wrap">
+    <h2 class="font-display-lg text-on-surface copper-accent pb-stack-sm inline-block" style="font-size: clamp(26px, 3vw, 38px); font-weight: 300; letter-spacing: 0.04em;">Especialidades</h2>
+    <a class="inline-flex items-center gap-2 text-copper font-label-sm text-label-sm uppercase tracking-widest group/link" href="servicos.html">
+      Ver todos os serviços <span class="material-symbols-outlined text-lg transition-transform group-hover/link:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+    </a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-12">
+    <!-- Card 1 -->
+    <article class="card-border p-8 card-bg-hover flex flex-col rounded-xl group relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+      <div class="mb-stack-lg">
+        <span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="auto_awesome">auto_awesome</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Facetas em Porcelana</h3>
+      <div class="w-8 h-px mb-stack-md" style="background:#C0895F;"></div>
+      <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed flex-grow">
+        Transformação estética milimétrica, devolvendo harmonia e brilho natural ao seu sorriso com lâminas de alta durabilidade.
+      </p>
+    </article>
+    <!-- Card 2 -->
+    <article class="card-border p-8 card-bg-hover flex flex-col rounded-xl group relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+      <div class="mb-stack-lg">
+        <span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="face_retouching_natural">face_retouching_natural</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Harmonização Orofacial</h3>
+      <div class="w-8 h-px mb-stack-md" style="background:#C0895F;"></div>
+      <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed flex-grow">
+        Procedimentos minimamente invasivos para equilibrar e rejuvenescer as proporções do rosto com sutileza e precisão.
+      </p>
+    </article>
+    <!-- Card 3 -->
+    <article class="card-border p-8 card-bg-hover flex flex-col rounded-xl group relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
+      <div class="mb-stack-lg">
+        <span class="material-symbols-outlined text-4xl text-primary font-light" data-icon="all_inclusive">all_inclusive</span>
+      </div>
+      <h3 class="font-title-md text-title-md text-on-surface mb-stack-sm">Alinhadores Invisíveis</h3>
+      <div class="w-8 h-px mb-stack-md" style="background:#C0895F;"></div>
+      <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed flex-grow">
+        A alternativa moderna e discreta. Placas transparentes sob medida que alinham seus dentes com conforto e previsibilidade digital.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- Diferencial: A Convergência -->
+<section class="overflow-hidden" style="background: rgba(14,42,48,0.35);">
+  <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[560px]">
+    <!-- Left: Text -->
+    <div class="px-margin-mobile md:px-margin-desktop py-section-gap-mobile md:py-section-gap flex flex-col justify-center">
+      <p class="font-label-sm text-label-sm text-primary mb-stack-lg tracking-[0.2em]">Diferencial ATKA</p>
+      <h2 class="font-display-lg text-on-surface mb-stack-md" style="font-size: clamp(26px, 3vw, 38px); font-weight: 300; line-height: 1.2; letter-spacing: 0.04em;">A convergência entre arte,<br>ciência e <em>hospitalidade.</em></h2>
+      <div class="w-10 h-px mb-8" style="background:#C0895F;"></div>
+      <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-10 max-w-md">
+        Nossa estrutura foi desenvolvida para oferecer uma experiência odontológica diferenciada. Desde a iluminação planejada até os protocolos cirúrgicos, cada elemento foi pensado para o seu conforto.
+      </p>
+      <ul class="space-y-5">
+        <li class="flex items-center gap-4">
+          <span class="w-6 h-px flex-shrink-0" style="background:#C0895F;"></span>
+          <span class="font-label-sm text-label-sm text-on-surface tracking-wider">Equipamentos de Diagnóstico 3D</span>
+        </li>
+        <li class="flex items-center gap-4">
+          <span class="w-6 h-px flex-shrink-0" style="background:#C0895F;"></span>
+          <span class="font-label-sm text-label-sm text-on-surface tracking-wider">Ambiente: Climatização e Aromaterapia</span>
+        </li>
+        <li class="flex items-center gap-4">
+          <span class="w-6 h-px flex-shrink-0" style="background:#C0895F;"></span>
+          <span class="font-label-sm text-label-sm text-on-surface tracking-wider">Protocolos Rígidos de Biossegurança</span>
+        </li>
+      </ul>
+    </div>
+    <!-- Right: Image -->
+    <div class="relative min-h-[320px] md:min-h-0 overflow-hidden">
+      <img alt="Clínica ATKA" class="w-full h-full object-cover absolute inset-0" src="../Imagens/imagem 1.webp"/>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-section-gap-mobile md:py-section-gap px-margin-mobile md:px-margin-desktop text-center" style="background: #0e2a30;">
+  <div class="max-w-xl mx-auto">
+    <p class="font-label-sm text-label-sm text-primary mb-stack-lg tracking-[0.2em]">Reserve seu horário</p>
+    <h2 class="font-display-lg text-on-surface mb-stack-md" style="font-size: clamp(26px, 3vw, 38px); font-weight: 300; line-height: 1.2; letter-spacing: 0.04em;">
+      Pronto para revelar a sua melhor versão?
+    </h2>
+    <div class="w-10 h-px mx-auto mb-8" style="background:#C0895F;"></div>
+    <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-12">
+      Fale diretamente com nossa equipe de concierge e reserve o seu horário.
+    </p>
+    <a class="btn-primary px-8 py-3 font-label-sm text-label-sm uppercase tracking-widest" href="https://wa.me/5511999999999">Agende no WhatsApp</a>
+  </div>
+</section>
+</main>
+<footer class="w-full bg-surface-container-lowest pt-section-gap pb-stack-lg px-margin-mobile md:px-margin-desktop border-t border-outline-variant/10 flat no shadows relative overflow-hidden">
+<!-- Faint watermark background -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[20vw] font-display-lg text-on-surface opacity-[0.02] pointer-events-none select-none tracking-widest">
+            ATKA
+        </div>
+<div class="max-w-container-max mx-auto relative z-10 flex flex-col gap-stack-lg">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-stack-lg border-b border-outline-variant/10 pb-stack-lg">
+<a class="font-display-lg text-display-lg text-on-surface uppercase flex items-center gap-4" href="#">
+<img alt="ATKA" class="h-8 w-auto" src="logo_ATKA.svg"/>
+                    ATKA
+                </a>
+<nav class="flex flex-wrap gap-x-gutter gap-y-stack-sm">
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="index.html">Início</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="sobre.html">Sobre</a>
+<a class="text-tertiary hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="servicos.html">Serviços</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="contato.html">Contato</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="#">Termos de Uso</a>
+<a class="text-on-surface-variant hover:text-tertiary-fixed-dim transition-colors font-body-md text-body-md" href="#">Privacidade</a>
+</nav>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-md text-body-md text-sm">
+<p>© 2024 ATKA Clínica Odontológica. Todos os direitos reservados.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="language">language</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
+</body>
+</html>
